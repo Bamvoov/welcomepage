@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* --- THESE 3 LINES ARE REQUIRED FOR TAILWIND TO WORK --- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ------------------------------------------------------- */
+
+:root {
+  --bg-1: #0B0F19;             /* Premium deep slate-black */
+  --bg-2: #151D30;             /* Solid dark slate card bg */
+  --bg-3: #24304A;             /* Clear slate border */
+  --accent: #EAB308;           /* Warm Golden Yellow */
+  --accent-secondary: #10B981; /* Emerald Green */
+  --accent-tertiary: #FACC15;  /* Bright Yellow */
+  --text: #F8FAFC;             /* Slate Off-White */
+  --muted: #94A3B8;            /* Slate Muted Gray */
+}
+
+[data-theme="light"] {
+  --bg-1: #FAF9F6;             /* Soft parchment light bg */
+  --bg-2: #F1F0EA;             /* Lighter secondary */
+  --bg-3: #E4E2D8;             
+  --accent: #CA8A04;           /* Warm Amber Gold */
+  --accent-secondary: #059669; 
+  --accent-tertiary: #B45309;  
+  --text: #18181B;             
+  --muted: #71717A;            
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+  background-color: var(--bg-1);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body {
+  /* Subtle amber-yellow dotted matrix bg pattern */
+  background-image: radial-gradient(circle, rgba(234, 179, 8, 0.035) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+[data-theme="light"] body {
+  background-image: radial-gradient(circle, rgba(107, 114, 128, 0.12) 1px, transparent 1px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* focus ring */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Custom Selection style */
+::selection {
+  background-color: var(--accent);
+  color: #FFFFFF;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-1);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
