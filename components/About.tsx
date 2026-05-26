@@ -150,10 +150,10 @@ export default function About() {
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
               <div className="space-y-1.5 text-xs md:text-sm flex-1">
                 <p className="text-muted">
-                  <span className="text-accent-tertiary">[status]</span> actively learning <span className="text-slate-100 font-semibold">Machine Learning</span> (mostly reading math papers and hoping it compiles).
+                  <span className="text-accent-tertiary">[status]</span> trying to learn <span className="text-slate-100 font-semibold">Java</span>
                 </p>
                 <p className="text-muted">
-                  <span className="text-accent-tertiary">[status]</span> current vibe: copy-pasting code from StackOverflow at 3 AM.
+                  <span className="text-accent-tertiary">[status]</span> current vibe: thinkin what to do.
                 </p>
               </div>
 
