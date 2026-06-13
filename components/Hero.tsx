@@ -62,7 +62,7 @@ export default function Hero() {
               <div className="w-2 h-2 rounded-full bg-yellow-500/80" />
               <div className="w-2 h-2 rounded-full bg-green-500/80" />
             </div>
-            <span className="text-xs text-muted">avatar.png</span>
+            <span className="text-xs text-muted">osaka.png</span>
             <span className="text-xs text-muted/40">100%</span>
           </div>
           {/* Image Container */}
