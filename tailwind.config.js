@@ -18,7 +18,6 @@ module.exports = {
         'bg-3': 'var(--bg-3)',
         'accent': 'var(--accent)',
         'accent-secondary': 'var(--accent-secondary)',
-        'accent-tertiary': 'var(--accent-tertiary)',
         'muted': 'var(--muted)',
         'text-color': 'var(--text)'
       },

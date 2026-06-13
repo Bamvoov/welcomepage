@@ -7,25 +7,23 @@
 /* ------------------------------------------------------- */
 
 :root {
-  --bg-1: #0B0F19;             /* Premium deep slate-black */
-  --bg-2: #151D30;             /* Solid dark slate card bg */
-  --bg-3: #24304A;             /* Clear slate border */
-  --accent: #EAB308;           /* Warm Golden Yellow */
-  --accent-secondary: #10B981; /* Emerald Green */
-  --accent-tertiary: #FACC15;  /* Bright Yellow */
-  --text: #F8FAFC;             /* Slate Off-White */
-  --muted: #94A3B8;            /* Slate Muted Gray */
+  --bg-1: #1d2021;             /* Gruvbox Dark bg0 */
+  --bg-2: #282828;             /* Gruvbox Dark bg1 */
+  --bg-3: #3c3836;             /* Gruvbox Dark bg2 */
+  --accent: #FABD2F;           /* Gruvbox Dark Yellow */
+  --accent-secondary: #B8BB26; /* Gruvbox Dark Green */
+  --text: #ebdbb2;             /* Gruvbox Dark fg0 */
+  --muted: #a89984;            /* Gruvbox Dark fg4 */
 }
 
 [data-theme="light"] {
-  --bg-1: #FAF9F6;             /* Soft parchment light bg */
-  --bg-2: #F1F0EA;             /* Lighter secondary */
-  --bg-3: #E4E2D8;             
-  --accent: #CA8A04;           /* Warm Amber Gold */
-  --accent-secondary: #059669; 
-  --accent-tertiary: #B45309;  
-  --text: #18181B;             
-  --muted: #71717A;            
+  --bg-1: #fbf1c7;             /* Gruvbox Light bg0 */
+  --bg-2: #ebdbb2;             /* Gruvbox Light bg1 */
+  --bg-3: #d5c4a1;             /* Gruvbox Light bg2 */
+  --accent: #b57614;           /* Gruvbox Light Yellow */
+  --accent-secondary: #79740e; /* Gruvbox Light Green */
+  --text: #282828;             /* Gruvbox Light fg0 */
+  --muted: #928374;            /* Gruvbox Light fg4 */
 }
 
 html,
@@ -38,16 +36,6 @@ body,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-body {
-  /* Subtle amber-yellow dotted matrix bg pattern */
-  background-image: radial-gradient(circle, rgba(234, 179, 8, 0.035) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-
-[data-theme="light"] body {
-  background-image: radial-gradient(circle, rgba(107, 114, 128, 0.12) 1px, transparent 1px);
 }
 
 h1, h2, h3, h4, h5, h6 {

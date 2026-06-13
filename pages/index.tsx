@@ -14,8 +14,6 @@ import Projects from "../components/Projects";
 
 import Contact from "../components/Contact";
 
-import Footer from "../components/Footer";
-
 import { SAMPLE_PROJECTS } from "../data/projects";
 
 import { Project } from "../types";
@@ -38,7 +36,7 @@ const Home: NextPage<any> = ({ theme, setTheme }) => {
       <div className="relative overflow-hidden min-h-screen">
         <Header theme={theme} setTheme={setTheme} />
 
-        <main className="container py-20 pb-32">
+        <main className="max-w-5xl mx-auto px-6 py-12 pb-12">
           <Hero />
 
           <About />
@@ -48,10 +46,6 @@ const Home: NextPage<any> = ({ theme, setTheme }) => {
           <Contact />
         </main>
       </div>
-
-      {/* FOOTER (separate, dark) */}
-
-      <Footer />
     </>
   );
 };

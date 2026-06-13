@@ -3,28 +3,28 @@ import { Project } from "../types";
 export const SAMPLE_PROJECTS: Project[] = [
   {
     id: "p1",
-    title: "Better-book",
-    description: "A web based notepad I created that has integration of Gemini to summarize and expand text.",
+    title: "Sorelax – Autonomous Context Agent ",
+    description: "Autonomous background agent that JOINs your GitHub, Linear, Slack, and Notion in a single Coral SQL query and keeps your AI coding environment permanently context-aware. ",
     // 👇 Next.js serves files in "public" at the root URL.
-    tech: ["React", "JavaScript", "Tailwind", "Vite"],
+    tech: ["Python", "FastAPI", "TypeScript", "Gemini API"],
     demo: "#",
-    repo: "https://github.com/Bamvoov/better-book",
+    repo: "https://github.com/manthanawgan/Sorelax",
   },
   {
     id: "p2",
-    title: "Eco-Footprint Analyzer",
-    description: "A modern, interactive Python desktop application designed to raise awareness about the environmental cost of food consumption. Calculates Carbon Footprint and Virtual Water Usage.",
-    tech: ["Python", "Tkinter", "Matplotlib"],
+    title: "lyricT – CLI Lyrics Syncer ",
+    description: "A responsive, centered, dynamically-themed CLI lyrics syncer for Linux media players. It connects to active players (Spotify, VLC, Audacious, Firefox, Chrome, etc.) via MPRIS/playerctl, fetches synced lyrics, and displays them beautifully in your terminal with smooth transitions and cover-art-matching background gradients.",
+    tech: ["Python"],
     demo: "#",
-    repo: "https://github.com/Bamvoov/Eco-Footprint-Analyzer",
+    repo: "https://github.com/Bamvoov/lyricT",
   },
   {
     id: "p3",
-    title: "Calorie-Tracker",
-    description: "A modern web application built with Next.js App Router, Tailwind CSS, Prisma, Supabase, Zustand, and Recharts. Uses Google's Gemini API (Free Tier) to parse natural language food descriptions into estimated calories",
+    title: "AMD Slingshot – AI Voice Interviewer ",
+    description: "AI Interviewer — For AMD Slingshot Hackathon --An AI-powered mock interview platform that conducts adaptive voice interviews, analyzes your resume, and generates detailed performance reports with personalized feedback",
     // 👇 Points to public/calorie.png
-    tech: ["TypeScript", "JavaScript", "React", "Tailwind", "Next.js"],
+    tech: ["Python", "Groq API (Llama 3.3)"],
     demo: "#",
-    repo: "https://github.com/Bamvoov/Calorie-Tracker",
+    repo: "https://github.com/Bamvoov/Groq API (Llama 3.3)-Tracker",
   }
 ];

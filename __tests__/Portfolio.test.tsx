@@ -17,5 +17,5 @@ jest.mock('next/image', () => ({
 
 test('renders portfolio landing page', () => {
   render(<Home theme="dark" setTheme={() => {}} />);
-  expect(screen.getByText(/Satvik/i)).toBeInTheDocument();
+  expect(screen.getAllByText(/Satvik/i).length).toBeGreaterThan(0);
 });
