@@ -28,7 +28,7 @@ function ProjectRow({ project, index }: ProjectRowProps) {
           <h3 className="text-base font-bold text-text-color uppercase tracking-tight">
             {project.title.toLowerCase()}
           </h3>
-          <span className="text-xs text-muted/50 hidden sm:inline">(v1.0.0)</span>
+          <span className="text-xs text-muted/50 hidden sm:inline"></span>
         </div>
 
         <p className="font-sans text-sm text-muted leading-relaxed max-w-2xl normal-case">
