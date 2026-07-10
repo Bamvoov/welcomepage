@@ -1,6 +1,7 @@
 "use client";
 
 import { FolderGit2, Github, ExternalLink } from "lucide-react";
+import Image from "next/image";
 import { Project } from "../types";
 
 type ProjectRowProps = {
@@ -121,10 +122,11 @@ export default function Projects({ projects = [] }: ProjectsProps) {
 
           {/* Funny Projects GIF */}
           <div className="pt-4 border-t border-bg-3/40 flex flex-col sm:flex-row items-center justify-center gap-4">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/azumanga-daiho-azumanga.gif"
               alt="Azumanga projects meme"
+              width={280}
+              height={128}
               className="w-full max-w-[280px] h-32 object-contain rounded-sm border border-bg-3 bg-bg-1"
             />
             <div className="w-full max-w-[280px] h-32 flex items-center justify-center rounded-sm border border-bg-3 bg-bg-1 text-xs font-mono text-muted/70 p-4 text-center">

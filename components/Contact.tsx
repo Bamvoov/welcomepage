@@ -1,10 +1,13 @@
 "use client";
 
 import { Terminal, Send, Check } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
+  const router = useRouter();
 
   const handleCopyEmail = (e: React.MouseEvent | React.KeyboardEvent) => {
     e.preventDefault();
@@ -122,10 +125,11 @@ export default function Contact() {
 
               {/* Right column: penguin */}
               <div className="border-t md:border-t-0 md:border-l border-bg-3/40 pt-6 md:pt-0 md:pl-6 flex items-center justify-center h-full min-h-[120px] w-full">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src="/pengu chio.gif"
                   alt="Linux Pengu dancing"
+                  width={176}
+                  height={176}
                   className="w-36 h-36 md:w-44 md:h-44 object-contain rounded-sm"
                 />
               </div>
@@ -175,7 +179,7 @@ export default function Contact() {
                 </div>
                 <div className="mt-4 flex justify-end">
                   <a
-                    href="/resume-3.pdf"
+                    href={`${router.basePath || ""}/resume-3.pdf`}
                     download
                     className="inline-block px-3 py-1.5 border border-accent text-accent font-mono text-xs tracking-wide rounded-sm hover:bg-accent/40 transition-colors"
                   >

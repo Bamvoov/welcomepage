@@ -15,6 +15,19 @@ jest.mock('next/image', () => ({
   },
 }));
 
+// Mock next/router
+jest.mock('next/router', () => ({
+  useRouter() {
+    return {
+      basePath: '',
+      pathname: '/',
+      route: '/',
+      query: {},
+      asPath: '/',
+    };
+  },
+}));
+
 test('renders portfolio landing page', () => {
   render(<Home theme="dark" setTheme={() => {}} />);
   expect(screen.getAllByText(/Satvik/i).length).toBeGreaterThan(0);

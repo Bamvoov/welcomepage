@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 import Header from "../components/Header";
 
@@ -20,6 +21,7 @@ import { Project } from "../types";
 
 const Home: NextPage<any> = ({ theme, setTheme }) => {
   const [projects] = useState<Project[]>(SAMPLE_PROJECTS);
+  const router = useRouter();
 
   return (
     <>
@@ -28,7 +30,7 @@ const Home: NextPage<any> = ({ theme, setTheme }) => {
 
         <meta name="description" content="Personal portfolio website" />
 
-        <link rel="icon" href="/Squirtle.png" />
+        <link rel="icon" href={`${router.basePath || ""}/Squirtle.png`} />
       </Head>
 
       {/* GRADIENT + VIGNETTE WRAPPER */}

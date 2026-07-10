@@ -1,6 +1,7 @@
 "use client";
 
 import { Terminal, Cpu, Zap, Activity } from "lucide-react";
+import Image from "next/image";
 
 export default function About() {
   const stack = ["Python", "C++", "TypeScript", "Next.js", "SQL", "Git", "React"];
@@ -91,10 +92,11 @@ export default function About() {
 
             {/* Funny Simulator GIF */}
             <div className="mt-auto pt-4 border-t border-bg-3/40 flex justify-center shrink-0">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="/osaka-osaka-simulator.gif"
                 alt="Osaka simulator"
+                width={250}
+                height={96}
                 className="w-full h-24 object-contain rounded-sm border border-bg-3 bg-bg-1"
               />
             </div>
@@ -127,11 +129,12 @@ export default function About() {
 
               {/* Funny GIF */}
               <div className="shrink-0">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src="/osaka-azumanga-daioh.gif"
                   alt="Osaka spacey"
-                  className="w-24 h-24 object-contain rounded-sm border border-bg-3 bg-bg-1"
+                  width={96}
+                  height={96}
+                  className="object-contain rounded-sm border border-bg-3 bg-bg-1"
                 />
               </div>
             </div>

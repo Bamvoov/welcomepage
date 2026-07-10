@@ -2,6 +2,8 @@
 
 import { Sun, Moon } from "lucide-react";
 
+import Image from "next/image";
+
 type HeaderProps = {
   theme: "light" | "dark";
   setTheme: (t: "light" | "dark") => void;
@@ -23,11 +25,12 @@ export default function Header({ theme, setTheme }: HeaderProps) {
         className="flex items-center gap-2 cursor-pointer text-accent hover:text-accent-secondary transition-colors"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src="/osaka-ayumu.gif"
           alt="Osaka logo icon"
-          className="w-6 h-6 object-contain rounded-sm"
+          width={24}
+          height={24}
+          className="object-contain rounded-sm"
         />
         <span className="font-bold">satvik@arch:~</span>
         <span className="animate-ping inline-block w-1.5 h-3 bg-accent ml-0.5" />

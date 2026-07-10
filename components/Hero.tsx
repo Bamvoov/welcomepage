@@ -19,11 +19,12 @@ export default function Hero() {
       <div className="flex flex-col max-w-xl w-full">
         {/* Waving GIF */}
         <div className="mb-4 shrink-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src="/azumanga-daioh-chiyo-chan.gif"
             alt="Waving sticker"
-            className="w-28 h-28 object-contain rounded-sm"
+            width={112}
+            height={112}
+            className="object-contain rounded-sm"
           />
         </div>
         <h1 className="text-4xl md:text-5xl font-extrabold leading-none tracking-tight font-mono">
