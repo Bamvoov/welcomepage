@@ -5,8 +5,8 @@ export default function Hero() {
   const bioPoints = [
     "Somehow my code works xD",
     "I love tech in general",
-    "I love ricing my Linux setup ",
-    "First year CS student with 120 browser tabs open",
+    "Larping all the time",
+    "Second year CS student with 120 browser tabs open",
     "I love building random stuff",
   ];
 
@@ -63,7 +63,7 @@ export default function Hero() {
               <div className="w-2 h-2 rounded-full bg-yellow-500/80" />
               <div className="w-2 h-2 rounded-full bg-green-500/80" />
             </div>
-            <span className="text-xs text-muted">osaka.png</span>
+            <span className="text-xs text-muted">osaka.gif</span>
             <span className="text-xs text-muted/40">100%</span>
           </div>
           {/* Image Container */}

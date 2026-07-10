@@ -4,7 +4,7 @@ import { Terminal, Cpu, Zap, Activity } from "lucide-react";
 import Image from "next/image";
 
 export default function About() {
-  const stack = ["Python", "C++", "TypeScript", "Next.js", "SQL", "Git", "React"];
+  const stack = ["Python", "C++", "TypeScript", "Next.js", "SQL", "go", "React"];
 
   return (
     <section id="about" className="mt-16 flex justify-center w-full">
@@ -35,14 +35,14 @@ export default function About() {
             </div>
 
             <div className="space-y-2 text-muted">
-              <p className="text-accent-secondary">satvik@archlinux ~ $ <span className="text-text-color">fastfetch</span></p>
+              <p className="text-accent-secondary">bamvoov@cachyos ~ $ <span className="text-text-color">fastfetch</span></p>
               <div className="h-px bg-bg-3/40 my-2" />
               <div className="grid grid-cols-[100px_1fr] gap-x-2 gap-y-1 text-xs md:text-sm">
                 <span className="text-accent">OS</span>
-                <span className="text-accent">archlinux(btw) </span>
+                <span className="text-accent">cachyos(btw) </span>
 
                 <span className="text-accent">Host</span>
-                <span className="text-accent">satvik</span>
+                <span className="text-accent">bamvoov</span>
 
                 <span className="text-accent">Kernel</span>
                 <span className="text-accent">linux 6.12.11</span>
@@ -54,7 +54,7 @@ export default function About() {
                 <span className="text-accent">/usr/bin/zsh</span>
 
                 <span className="text-accent">Terminal</span>
-                <span className="text-accent">kitty</span>
+                <span className="text-accent">foot</span>
               </div>
 
             </div>
@@ -123,7 +123,7 @@ export default function About() {
                   <span className="text-accent">status</span> trying to learn <span className="text-text-color font-semibold">go</span>
                 </p>
                 <p className="text-muted">
-                  <span className="text-accent">status</span> current vibe: thinkin what to do.
+                  <span className="text-accent">status</span>  working on a webring project with the gng!.
                 </p>
               </div>
 

@@ -100,7 +100,7 @@ export default function Projects({ projects = [] }: ProjectsProps) {
     <section id="projects" className="mt-16 flex justify-center w-full">
       <div className="w-full max-w-4xl">
         {/* Section Header */}
-        <div className="flex items-center gap-4 mb-6">
+        <div className="flex items-center gap-4 mb-4">
           <h2 className="text-xl font-bold tracking-tight text-accent flex items-center gap-2 uppercase font-mono">
             <span># 02 projects</span>
           </h2>
@@ -109,7 +109,110 @@ export default function Projects({ projects = [] }: ProjectsProps) {
 
         {/* Directory heading */}
         <div className="font-mono text-xs text-muted mb-4">
-          <span>satvik@archlinux ~ $ ls -la ~/projects</span>
+          <span>bamvoov@cachyos ~ $ ls -la ~/projects</span>
+        </div>
+
+        {/* Meme GIFs (Simulating terminal directory list output, aligned to Projects box below) */}
+        <div className="grid grid-cols-5 gap-3 sm:gap-4 mb-6 w-full select-none">
+          {/* GIF 1: cooking.gif */}
+          <div className="w-full rounded-sm border border-bg-3/80 bg-bg-2 overflow-hidden font-mono text-xs shadow-md">
+            <div className="flex justify-between items-center border-b border-bg-3/40 px-2.5 py-1 bg-bg-2">
+              <div className="flex gap-1">
+                <div className="w-1.5 h-1.5 rounded-full bg-red-500/80" />
+                <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/80" />
+                <div className="w-1.5 h-1.5 rounded-full bg-green-500/80" />
+              </div>
+              <span className="text-[9px] text-muted/80">cooking-meth.gif</span>
+            </div>
+            <div className="relative aspect-[4/3] w-full bg-bg-1 p-1">
+              <Image
+                src="/osaka-azumanga-daioh-walter.gif"
+                alt="Osaka Azumanga Daioh Walter White"
+                fill
+                className="object-cover rounded-sm"
+              />
+            </div>
+          </div>
+
+          {/* GIF 2: yum.gif */}
+          <div className="w-full rounded-sm border border-bg-3/80 bg-bg-2 overflow-hidden font-mono text-xs shadow-md">
+            <div className="flex justify-between items-center border-b border-bg-3/40 px-2.5 py-1 bg-bg-2">
+              <div className="flex gap-1">
+                <div className="w-1.5 h-1.5 rounded-full bg-red-500/80" />
+                <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/80" />
+                <div className="w-1.5 h-1.5 rounded-full bg-green-500/80" />
+              </div>
+              <span className="text-[9px] text-muted/80">yum.gif</span>
+            </div>
+            <div className="relative aspect-[4/3] w-full bg-bg-1 p-1">
+              <Image
+                src="/osaka-yum.gif"
+                alt="Osaka Yum"
+                fill
+                className="object-cover rounded-sm"
+              />
+            </div>
+          </div>
+
+          {/* GIF 3: lightning.gif */}
+          <div className="w-full rounded-sm border border-bg-3/80 bg-bg-2 overflow-hidden font-mono text-xs shadow-md">
+            <div className="flex justify-between items-center border-b border-bg-3/40 px-2.5 py-1 bg-bg-2">
+              <div className="flex gap-1">
+                <div className="w-1.5 h-1.5 rounded-full bg-red-500/80" />
+                <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/80" />
+                <div className="w-1.5 h-1.5 rounded-full bg-green-500/80" />
+              </div>
+              <span className="text-[9px] text-muted/80">lightning.gif</span>
+            </div>
+            <div className="relative aspect-[4/3] w-full bg-bg-1 p-1">
+              <Image
+                src="/osaka-azumanga-daioh.-lightning.gif"
+                alt="Osaka Lightning"
+                fill
+                className="object-cover rounded-sm"
+              />
+            </div>
+          </div>
+
+          {/* GIF 4: helmet.gif */}
+          <div className="w-full rounded-sm border border-bg-3/80 bg-bg-2 overflow-hidden font-mono text-xs shadow-md">
+            <div className="flex justify-between items-center border-b border-bg-3/40 px-2.5 py-1 bg-bg-2">
+              <div className="flex gap-1">
+                <div className="w-1.5 h-1.5 rounded-full bg-red-500/80" />
+                <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/80" />
+                <div className="w-1.5 h-1.5 rounded-full bg-green-500/80" />
+              </div>
+              <span className="text-[9px] text-muted/80">helmet.gif</span>
+            </div>
+            <div className="relative aspect-[4/3] w-full bg-bg-1 p-1">
+              <Image
+                src="/azumanga-daioh-osaka-helmet.gif"
+                alt="Osaka Helmet"
+                fill
+                className="object-cover rounded-sm"
+              />
+            </div>
+          </div>
+
+          {/* GIF 5: two-sides.gif */}
+          <div className="w-full rounded-sm border border-bg-3/80 bg-bg-2 overflow-hidden font-mono text-xs shadow-md">
+            <div className="flex justify-between items-center border-b border-bg-3/40 px-2.5 py-1 bg-bg-2">
+              <div className="flex gap-1">
+                <div className="w-1.5 h-1.5 rounded-full bg-red-500/80" />
+                <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/80" />
+                <div className="w-1.5 h-1.5 rounded-full bg-green-500/80" />
+              </div>
+              <span className="text-[9px] text-muted/80">two-sides.gif</span>
+            </div>
+            <div className="relative aspect-[4/3] w-full bg-bg-1 p-1">
+              <Image
+                src="/i-have-two-sides-osaka.gif"
+                alt="I Have Two Sides Osaka"
+                fill
+                className="object-cover rounded-sm"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Projects List */}

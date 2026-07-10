@@ -26,6 +26,10 @@
   --muted: #928374;            /* Gruvbox Light fg4 */
 }
 
+html {
+  font-size: 110%; /* Proportionally enlarges layout and text using rem units */
+}
+
 html,
 body,
 #__next {
