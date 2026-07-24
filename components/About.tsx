@@ -123,8 +123,32 @@ export default function About() {
                   <span className="text-accent">status</span> trying to learn <span className="text-text-color font-semibold">go</span>
                 </p>
                 <p className="text-muted">
-                  <span className="text-accent">status</span>  working on a webring project with the gng!.
+                  <span className="text-accent">status</span> part of backrooms webring!
                 </p>
+
+                {/* Webring Controls */}
+                <div className="pt-2 flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm font-mono font-semibold">
+                  <a
+                    href="https://webring-vit.vercel.app/redirect?from=bamvoov&dir=prev"
+                    className="text-accent hover:underline"
+                  >
+                    ← previous site
+                  </a>
+                  <span className="text-muted/40">|</span>
+                  <a
+                    href="https://webring-vit.vercel.app/random"
+                    className="text-accent-secondary hover:underline"
+                  >
+                    random site
+                  </a>
+                  <span className="text-muted/40">|</span>
+                  <a
+                    href="https://webring-vit.vercel.app/redirect?from=bamvoov&dir=next"
+                    className="text-accent hover:underline"
+                  >
+                    next site →
+                  </a>
+                </div>
               </div>
 
               {/* Funny GIF */}

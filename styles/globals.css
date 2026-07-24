@@ -7,9 +7,9 @@
 /* ------------------------------------------------------- */
 
 :root {
-  --bg-1: #1d2021;             /* Gruvbox Dark bg0 */
-  --bg-2: #282828;             /* Gruvbox Dark bg1 */
-  --bg-3: #3c3836;             /* Gruvbox Dark bg2 */
+  --bg-1: #000000;             /* Pitch Black bg0 */
+  --bg-2: #121212;             /* Darker bg1 */
+  --bg-3: #242424;             /* Darker bg2 */
   --accent: #FABD2F;           /* Gruvbox Dark Yellow */
   --accent-secondary: #B8BB26; /* Gruvbox Dark Green */
   --text: #ebdbb2;             /* Gruvbox Dark fg0 */
@@ -90,4 +90,20 @@ a:hover {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent);
+}
+
+/* --- Infinite Marquee Animation --- */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
 }
