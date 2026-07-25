@@ -53,34 +53,21 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* RIGHT: Avatar framed in terminal style */}
+      {/* RIGHT: Avatar */}
       <div className="w-full flex flex-col items-center md:items-end gap-4">
-        <div className="w-full max-w-sm rounded-sm border border-bg-3 bg-bg-2 overflow-hidden font-mono text-sm">
-          {/* Header */}
-          <div className="flex justify-between items-center border-b border-bg-3/40 px-4 py-2 bg-bg-2">
-            <div className="flex gap-1.5">
-              <div className="w-2 h-2 rounded-full bg-red-500/80" />
-              <div className="w-2 h-2 rounded-full bg-yellow-500/80" />
-              <div className="w-2 h-2 rounded-full bg-green-500/80" />
-            </div>
-            <span className="text-xs text-muted">osaka.gif</span>
-            <span className="text-xs text-muted/40">100%</span>
-          </div>
-          {/* Image Container */}
-          <div className="relative aspect-square w-full bg-bg-1 p-2">
-            <Image
-              src="/osaka-ayumu-kasuga.gif"
-              alt="Satvik Srivastava profile photo"
-              fill
-              priority
-              className="object-cover rounded-sm border border-bg-3/40 p-1"
-            />
-          </div>
+        <div className="relative aspect-square w-full max-w-sm">
+          <Image
+            src="/osaka-ayumu-kasuga.gif"
+            alt="Satvik Srivastava profile photo"
+            fill
+            priority
+            className="object-cover"
+          />
         </div>
 
         {/* Separate Webring Box (Larger) */}
         <div className="w-full max-w-sm flex flex-col items-center gap-3 font-mono text-sm text-center py-3">
-          <span className="text-muted text-xs sm:text-sm font-medium">part of backrooms webring</span>
+          <span className="text-muted text-xs sm:text-sm font-medium">part of backdoors webring</span>
           <a
             href="https://webring-vit.vercel.app/"
             target="_blank"
@@ -97,7 +84,9 @@ export default function Hero() {
           </a>
           <div className="flex items-center gap-3 text-xs sm:text-sm flex-wrap justify-center font-semibold">
             <a
-              href="https://webring-vit.vercel.app/redirect?from=bamvoov&dir=prev"
+              href="https://webring-vit.vercel.app/redirect?from=satvik&dir=prev"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-accent hover:underline"
             >
               ← previous site
@@ -105,13 +94,17 @@ export default function Hero() {
             <span className="text-muted/40">•</span>
             <a
               href="https://webring-vit.vercel.app/random"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-accent-secondary hover:underline"
             >
               random site
             </a>
             <span className="text-muted/40">•</span>
             <a
-              href="https://webring-vit.vercel.app/redirect?from=bamvoov&dir=next"
+              href="https://webring-vit.vercel.app/redirect?from=satvik&dir=next"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-accent hover:underline"
             >
               next site →

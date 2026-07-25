@@ -37,24 +37,39 @@ export default function About() {
             <div className="space-y-2 text-muted">
               <p className="text-accent-secondary">bamvoov@cachyos ~ $ <span className="text-text-color">fastfetch</span></p>
               <div className="h-px bg-bg-3/40 my-2" />
-              <div className="grid grid-cols-[100px_1fr] gap-x-2 gap-y-1 text-xs md:text-sm">
-                <span className="text-accent">OS</span>
-                <span className="text-accent">cachyos(btw) </span>
+              <div className="grid grid-cols-[max-content_1fr] gap-x-4 gap-y-1 text-xs md:text-sm">
+                <span className="text-accent whitespace-nowrap">os</span>
+                <a
+                  href="https://cachyos.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  cachyos(btw)
+                </a>
 
-                <span className="text-accent">Host</span>
+                <span className="text-accent whitespace-nowrap">host</span>
                 <span className="text-accent">bamvoov</span>
 
-                <span className="text-accent">Kernel</span>
-                <span className="text-accent">linux 6.12.11</span>
+                <span className="text-accent whitespace-nowrap">desktop manager</span>
+                <a
+                  href="https://github.com/niri-wm/niri"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  niri
+                </a>
 
-                <span className="text-accent">Uptime</span>
-                <span className="text-accent">2 hours, 14 mins</span>
 
-                <span className="text-accent">Shell</span>
+                <span className="text-accent whitespace-nowrap">uptime</span>
+                <span className="text-accent">8 hours, 14 mins</span>
+
+                <span className="text-accent whitespace-nowrap">shell</span>
                 <span className="text-accent">/usr/bin/zsh</span>
 
-                <span className="text-accent">Terminal</span>
-                <span className="text-accent">foot</span>
+                <span className="text-accent whitespace-nowrap">terminal</span>
+                <span className="text-accent">kitty</span>
               </div>
 
             </div>
@@ -123,32 +138,9 @@ export default function About() {
                   <span className="text-accent">status</span> trying to learn <span className="text-text-color font-semibold">go</span>
                 </p>
                 <p className="text-muted">
-                  <span className="text-accent">status</span> part of backrooms webring!
+                  <span className="text-accent">status</span> part of backdoors webring!
                 </p>
 
-                {/* Webring Controls */}
-                <div className="pt-2 flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm font-mono font-semibold">
-                  <a
-                    href="https://webring-vit.vercel.app/redirect?from=bamvoov&dir=prev"
-                    className="text-accent hover:underline"
-                  >
-                    ← previous site
-                  </a>
-                  <span className="text-muted/40">|</span>
-                  <a
-                    href="https://webring-vit.vercel.app/random"
-                    className="text-accent-secondary hover:underline"
-                  >
-                    random site
-                  </a>
-                  <span className="text-muted/40">|</span>
-                  <a
-                    href="https://webring-vit.vercel.app/redirect?from=bamvoov&dir=next"
-                    className="text-accent hover:underline"
-                  >
-                    next site →
-                  </a>
-                </div>
               </div>
 
               {/* Funny GIF */}
@@ -158,7 +150,7 @@ export default function About() {
                   alt="Osaka spacey"
                   width={96}
                   height={96}
-                  className="object-contain rounded-sm border border-bg-3 bg-bg-1"
+                  className="object-contain"
                 />
               </div>
             </div>
