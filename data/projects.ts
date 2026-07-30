@@ -27,7 +27,7 @@ export const SAMPLE_PROJECTS: Project[] = [
   },
   {
     id: "p4",
-    title: "backdoors-org Webring Maintainer",
+    title: "backdoors-org Webring",
     description: "A student developer community connecting builders across all four VIT campuses through the open web.",
 
     tech: ["HTML", "CSS", "JavaScript"],
