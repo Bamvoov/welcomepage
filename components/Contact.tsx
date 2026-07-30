@@ -31,11 +31,6 @@ export default function Contact() {
         <div className="rounded-sm border border-bg-3 bg-bg-2 overflow-hidden font-mono text-sm">
           {/* Header */}
           <div className="flex justify-between items-center border-b border-bg-3/40 px-4 py-3 bg-bg-2">
-            <div className="flex gap-1.5">
-              <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
-              <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
-              <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
-            </div>
             <span className="text-xs text-muted">connect.sh</span>
             <Terminal size={14} className="text-muted" />
           </div>
@@ -141,11 +136,6 @@ export default function Contact() {
         <div className="mt-6 rounded-sm border border-bg-3 bg-bg-2 overflow-hidden font-mono text-sm">
           {/* Header */}
           <div className="flex justify-between items-center border-b border-bg-3/40 px-4 py-3 bg-bg-2">
-            <div className="flex gap-1.5">
-              <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
-              <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
-              <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
-            </div>
             <span className="text-xs text-muted">availability.sh</span>
             <Terminal size={14} className="text-muted" />
           </div>

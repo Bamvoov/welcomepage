@@ -25,11 +25,6 @@ export default function About() {
           >
             {/* Terminal Topbar */}
             <div className="flex justify-between items-center border-b border-bg-3/40 pb-3 mb-4">
-              <div className="flex gap-1.5">
-                <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
-                <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
-                <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
-              </div>
               <span className="text-xs text-muted">system_info.sh</span>
               <Terminal size={14} className="text-muted" />
             </div>
@@ -81,11 +76,6 @@ export default function About() {
           >
             {/* Terminal Topbar */}
             <div className="flex justify-between items-center border-b border-bg-3/40 pb-3 mb-4">
-              <div className="flex gap-1.5">
-                <div className="w-2.5 h-2.5 rounded-full bg-bg-3" />
-                <div className="w-2.5 h-2.5 rounded-full bg-bg-3" />
-                <div className="w-2.5 h-2.5 rounded-full bg-bg-3" />
-              </div>
               <span className="text-xs text-muted">pacman -Q</span>
               <Zap size={14} className="text-accent" />
             </div>
@@ -123,11 +113,6 @@ export default function About() {
           >
             {/* Terminal Topbar */}
             <div className="flex justify-between items-center border-b border-bg-3/40 pb-3 mb-4">
-              <div className="flex gap-1.5">
-                <div className="w-2.5 h-2.5 rounded-full bg-bg-3" />
-                <div className="w-2.5 h-2.5 rounded-full bg-bg-3" />
-                <div className="w-2.5 h-2.5 rounded-full bg-bg-3" />
-              </div>
               <span className="text-xs text-muted">status_log.log</span>
               <Activity size={14} className="text-accent-secondary" />
             </div>
